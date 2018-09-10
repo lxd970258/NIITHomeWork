@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+    $(document).ready(function(){
+      	$("#btn").click(function(){
+        	$("#content_container").load("blank.html");
+        });
+      });
+  </script>
+</head>
+
+<body class="text-center">
+  <nav class="navbar navbar-expand-md navbar-dark bg-secondary h-25 w-100">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand h-100 w-50 my-2 py-5" href="#" style="background-image: url(&quot;px.png&quot;); background-position:center center; background-size:auto; background-repeat:no-repeat;"></a>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 教学管理&nbsp;</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">&nbsp; &nbsp; &nbsp;课程浏览
+              <br>
+              <a class="dropdown-item" href="#">课程添加</a> ------------------------
+              <a class="dropdown-item" href="#">教师浏览</a>
+              <a class="dropdown-item" href="#">教师添加</a>------------------------
+              <a class="dropdown-item" href="#">班级信息</a>
+              <a class="dropdown-item" href="#">添加班级</a>
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#">学生信息</a>
+              <a class="dropdown-item" href="#">添加学生</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 考试管理</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">题库管理</a>
+              <a class="dropdown-item" href="#">在线考试</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 成绩统计&nbsp;</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">成绩汇总</a>
+              <a class="dropdown-item" href="#">成绩核算</a>
+              <a class="dropdown-item" href="#">成绩分析</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn navbar-btn ml-2 text-white text-center w-25 btn-primary" id="btn">
+          <i class="fa d-inline fa-lg fa-user-circle-o"></i>登录</a>
+      </div>
+    </div>
+  </nav>
+  <div id="content_container">
+    <div class="form-control">
+      <form class="form-horizontal w-100 h-100 my-3 px-5" role="form" action="">
+        <div class="form-group form-row">
+          <label for="courseNo" class="col-sm-2 control-label col-form-label">课程编号</label>
+          <div class="col-sm-10">
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="courseNo" disabled="disabled">
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label for="courseName" class="col-sm-2 control-label col-form-label">课程名称</label>
+          <div class="col-sm-10">
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="courseName" placeholder="请输入课程名称">
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label for="courseGrade" class="col-sm-2 control-label col-form-label">课程学分</label>
+          <div class="col-sm-10">
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="courseGrade" placeholder="请输入课程学分">
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label for="courseTime" class="col-sm-2 control-label col-form-label">课程学时</label>
+          <div class="col-sm-10">
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="courseName" placeholder="请输入课程学时">
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label for="courseInfo" class="col-sm-2 control-label col-form-label">课程简介</label>
+          <div class="col-sm-10">
+            <div class="textarea">
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="10" cols="30" placeholder="请输入课程信息"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="form-group form-row">
+          <label for="academy" class="col-sm-2 control-label col-form-label">学院</label>
+          <div class="col-sm-10">
+            <div class="col-sm-10">
+              <select class="form-control">
+				<option>数软学院</option>
+                <option>文学院</option>
+                <option>物理学院</option>
+                <option>化学院</option>
+                <option>医学院</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label for="major" class="col-sm-2 control-label col-form-label">专业</label>
+          <div class="col-sm-10">
+            <div class="col-sm-10">
+              <select class="form-control">
+			  <option>软件外包</option>
+                <option>软件工程</option>
+                <option>计算机科学与技术</option>
+                <option>大数据应用</option>
+              </select>
+            </div>
+          </div>
+        </div>
+		
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">提交</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="text-white bg-secondary">
+    <div class="container">
+      <div class="row w-100 h-25 mx-auto py-5" style="background-image: url('demos/img/QQ图片20180905110423.png') no-repeat;background-image: url('px.png');background-position:center center;background-size:auto;background-repeat:no-repeat;"></div>
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <p class="text-center text-white">© Copyright 2017 Pingendo - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+    $(document).ready(function(){
+      	$("#btn").click(function(){
+        	$("#content_container").load("blank.html");
+        });
+      });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
